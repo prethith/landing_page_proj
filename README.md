@@ -19,7 +19,7 @@ The following project is an attempt by me to create a responsive landing page fo
 - JavaScript
 - Git (for version control purposes)
 
-## Tools Used
+## Software Used
 - VisualStudio Code (for coding)
 - Brave Browser (for previewing and debugging)
 - Neovim (for editing log files and this README.md file)
