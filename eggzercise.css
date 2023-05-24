@@ -1,10 +1,17 @@
+
+/* Importing fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet');
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet');
+
 /* The following is the stylesheet for a little project I'm working on */
 
 /* Basic styling */ 
 
 * {
     box-sizing: border-box;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Source Sans Pro',sans-serif;
 }
 
 /* Letting the page take the entire width */
@@ -52,7 +59,7 @@ nav {
 }
 
 /* The navigational links organized into an unordered list */
-ul {
+nav > ul {
     display: flex;
     list-style-type: none;
 }
@@ -62,7 +69,8 @@ li {
 }
 
 /* Styling all the links */
-li a {
+.nav-links li > a{
+    font-family: 'Inter', sans-serif;
     text-decoration: none;
     color: #FDF6EC;
     letter-spacing: 0.2rem;
@@ -222,6 +230,8 @@ li a:hover{
 .flex-container-s3 {
     display: flex;
     flex-wrap: wrap;
+    max-width: 80%;
+    margin: auto;
 }
 
 .feature-card {
@@ -236,19 +246,85 @@ li a:hover{
 }
 
 .feature-card.text {
-    max-width: 55%;
-    padding:10%;
-    font-size: 130%;
+    max-width: 45%;
+    padding:8% 3%;
+    font-size: 110%;
+}
+
+.feature-card.text > span > p{
+    text-align: left;
 }
 
 .feature-card.image {
-    width: 45%;
+    max-width: 55%;
     height: 100%;
     align-self: center;
 }
+
+
 .feature-card.text ul {
     display: block;
     list-style-type: square;
+}
+
+
+
+
+/* Footer */
+footer {
+    font-family: 'Inter', sans-serif;
+    background-color:grey;
+    padding-top:5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    border-top: 1px solid #f4f4f4;
+}
+
+.grid-container {
+    display:grid;
+    padding-left: 0;
+    padding-right: 0;
+    width:100%;
+    grid-template-columns:2fr 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+
+.column.about-us > p {
+    text-align: justify;
+}
+
+#logo {
+    width: 30%;
+}
+
+.column {
+    margin: 0 10px;
+}
+
+.column > ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.column > h2 {
+    text-align: left;
+}
+.column > ul > li {
+    padding-left: 0;
+    padding-top:0;
+}
+
+#line-break-footer {
+    margin-top: 10px;
+    width: 70%;
+}
+
+.copyleft {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 0;
 }
 
 
@@ -272,26 +348,32 @@ li a:hover{
         
         text-align: left;
     }
+
+    .grid-container {
+        width: 80%;
+        display: grid;
+        grid-template-rows: 1fr repeat(3, 200px);
+        grid-template-columns: 1fr;
+    }
+
+    .column.about-us > p {
+        text-align: left;
+    }
 }
 
 
-
-
-/* Footer */
-footer {
-    background-color:red;
-}
-.details ul{
-    display: block;
-    text-align: left;
-}
-
-.details {
-    float: left;
-    padding-left: 5%;
-    padding-top: 5%;
-}
-
-.details h2 {
-    display: block;
+@media screen and (min-width:1201px) {
+    .feature-card.image.one {
+        order:0;
+    }
+    
+    .feature-card.image.two {
+        order:3;
+    }
+    
+    .feature-card.text:nth-of-type(3) {
+        order:4;
+    }
+    
+    
 }
