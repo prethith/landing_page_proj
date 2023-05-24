@@ -4,26 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/08faceba9f.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="eggzercise.css">
+   <script src="landingg.js" defer></script>
     <title>Landing Page</title>
 </head>
 <body>
     <div class="section-1">
          <!-- Navigation bar -->
-        <nav>
+        <nav class="navigation" id="navigation">
             <div class="page-name">
                 <h2>BUSINESS</h2>
             </div>
-    
-            <ul class="nav-links">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">FEATURES</a></li>
-                <li><a href="#">PRICING</a></li>
-                <li><a href="#">REVIEWS</a></li>
-                <li><a href="#">CONTACT</a></li>
+
+            <!-- Hamburger icon -->
+            <i class="fa-solid fa-bars" id="hamburger-icon" style="font-size: 1.3em;"></i>
+
+            <!-- Cross icon -->
+            <i class="fa-solid fa-xmark" style="font-size: 1.3em;"id="cross-icon"></i>
+
+            <ul class="nav-menu">
+                <li><a href="#" class="nav-link">HOME</a></li>
+                <li><a href="#section2" class="nav-link">PRODUCT</a></li>
+                <li><a href="#section3" class="nav-link">FEATURES</a></li>
+                <li><a href="#footer" class="nav-link">CONTACT</a></li>
             </ul>
+            
+                
         </nav>
-    
         <!-- First part of the body -->
         <div class="landing">
             <div class="main-text-center">
@@ -40,7 +49,7 @@
    
 
     <!-- Section 2 -->
-    <div class="section-2">
+    <div class="section-2" id="section2">
         <div class="flex-container-s2">
             <!-- These are the cards that will be displayed.  -->
             <div class="card" id="card-1">
@@ -71,7 +80,7 @@
     </div>
     
     <!-- Section 3 -->
-    <div class="section-3">
+    <div class="section-3" id="section3">
         <div class="intro-s3">
             <h1>Features</h1>
             <hr>
@@ -127,13 +136,30 @@
 
 
     <!-- Footer  -->
-    <footer>
+    <footer id="footer">
         <div class="grid-container">
 
             <!-- Logo and About Us section -->
             <div class="column about-us">
                 <img src="./logo-design.png" alt="Logo of the company" id="logo">
                 <p>We are a very real company that offer legitimate, reliable, and trustworthy services at an affordable cost to credible and extant clients who work across the globe. We also have an account sheet where the income and expenditures are recorded. We exist as a legal entity. </p>
+                <ul class="icon-list">
+                    <li>
+                        <a href="#" class="icons"><i class="fa-brands fa-amazon" style="font-size: 1.4em;"></i> </a> 
+                    </li>
+                    <li> 
+                        <a href="#" class="icons"><i class="fa-brands fa-facebook" style="font-size: 1.4em;"></i></a>
+                    </li>
+                    <li> 
+                        <a href="#" class="icons"><i class="fa-brands fa-instagram" style="font-size: 1.4em;"></i></a>
+                    </li>
+                    <li> 
+                        <a href="#" class="icons"><i class="fa-brands fa-twitter" style="font-size: 1.4em;"></i></a>
+                    </li>
+                    <li> 
+                        <a href="#" class="icons"><i class="fa-solid fa-envelope" style="font-size: 1.4em;"></i></a>
+                    </li>
+                </ul>
             </div>
             
 
