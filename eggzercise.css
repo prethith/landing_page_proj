@@ -68,13 +68,34 @@ li {
     padding: 10px;
 }
 
+
 /* Styling all the links */
-.nav-links li > a{
+.nav-menu li > a{
     font-family: 'Inter', sans-serif;
     text-decoration: none;
     color: #FDF6EC;
     letter-spacing: 0.2rem;
     font-weight: bold;
+}
+
+#hamburger-icon {
+    display: none;
+    cursor: pointer;
+    position:absolute;
+    top:2.2rem;
+    right:2rem;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#cross-icon {
+    display: none;
+    cursor: pointer;
+    position:absolute;
+    top:2.2rem;
+    right:2rem;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 li a:hover{
@@ -157,6 +178,9 @@ li a:hover{
     margin-right: auto;
 
 }
+
+
+
 /* Media query to make this section responsive */
 @media screen and (max-width:1200px) {
     .flex-container-s2 {
@@ -284,6 +308,23 @@ footer {
 
 }
 
+.icon-list li {
+    float: left;
+    padding: 10px;
+    text-align: center;
+}
+
+.icons {
+    text-decoration: none;
+    color:#f4f4f4;
+    background: rgba(133, 133, 133, 0.903);
+    padding: 10px 10px 5px 10px;
+    border-radius: 4px;
+}
+
+.icons:hover {
+    background: rgba(69, 69, 69, 0.903);
+}
 .grid-container {
     display:grid;
     padding-top:5%;
@@ -379,6 +420,50 @@ footer {
 }
 
 
+@media screen and (max-width:768px) {
+    .landing {
+        padding:50px 25px;
+    }
+    
+    .links p a {
+        display: block;
+        width:fit-content;
+    }
+    
+    #hamburger-icon {
+        display: flex;
+    }
+
+    .nav-menu li {
+        text-align: center;
+        padding: 0.5rem 0;
+        width: 100%;
+    }
+    .nav-menu li:active {
+        background-color: #222831;
+    }
+
+    .navigation {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-menu {
+        padding-left: 0;
+        display: none;
+        flex-direction: column;
+        width:100%;
+        /* margin: 0; */
+        background-color: #51515143;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+    #hamburger-icon.active {
+        display: flex;
+    }
+}
+
 @media screen and (min-width:1201px) {
     .feature-card.image.one {
         order:0;
@@ -391,6 +476,4 @@ footer {
     .feature-card.text:nth-of-type(3) {
         order:4;
     }
-    
-    
 }
