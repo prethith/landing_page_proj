@@ -1,0 +1,297 @@
+/* The following is the stylesheet for a little project I'm working on */
+
+/* Basic styling */ 
+
+* {
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Letting the page take the entire width */
+body {
+    margin: 0;
+    width: 100%;
+}
+/* Div of section-1 is the container that holds the background image */
+.section-1 {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.15),
+        rgba(0,0,0,0.15)
+        ), 
+    url('./camera.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Navigation bar -- the company name is displayed in big letters on the left, and the links are on the right */
+
+
+nav {
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom:0;
+    background-image: inital;
+    color: white;
+}
+
+/* Company name that is bigger than the links */
+.page-name {
+    display: inherit;
+    padding: 10px;
+    /* font-size: 175%; */
+    color: rgb(176, 175, 175);
+    /* font-weight: bold; */
+}
+
+.page-name:hover{
+    color: white;
+    cursor: pointer;
+}
+
+/* The navigational links organized into an unordered list */
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+li {
+    padding: 10px;
+}
+
+/* Styling all the links */
+li a {
+    text-decoration: none;
+    color: #FDF6EC;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+}
+
+li a:hover{
+    color: rgb(176, 175, 175);    
+}
+/* The main text that is visible on the first part of the landing page */
+
+.landing {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content:center; */
+    padding: 150px;    
+}
+
+
+.landing h1 {
+    order:-1;
+    color: #FCF8E8;
+}
+
+/* The "For Free" punchline stying */
+
+/* For the links  */
+.links p a {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px;
+    color: white;
+}
+
+/* The buy now button */
+#buy-now {
+    background-color: #146C94;
+    color: white;
+    border: 2px solid #4e8abb;
+    border-radius: 0.5rem;
+}
+
+/* Buy now button hover */
+#buy-now:hover {
+    background-color:#0e4b67 ;
+}
+
+/* The donate button */
+
+#donate {
+    border: 2px solid #515151;
+    border-radius: 0.5rem;
+}
+
+/* The donate button when hovered: */
+
+#donate:hover {
+    background-color: #6b6b6b87;
+}
+
+
+/* Section 2, which is a little expansion on the main landing page */
+
+.section-2 {
+    /* background-image: linear-gradient(to bottom right, rgba(81, 60, 44, 0.852),  rgba(23, 18, 20,0.75)); */
+    background: #3a3a3a;
+    color: #ffffff;
+}
+
+
+/*  List of colours 
+    #BE8A60 -- persian orange
+    #766153 -- umber
+ */
+
+ /* Setting the flex properties to the flex container */
+.flex-container-s2 {
+    display: flex;
+    justify-content: space-around;
+    padding: 5%;
+    /* width: 1170px; */
+    margin-left: auto;
+    margin-right: auto;
+
+}
+/* Media query to make this section responsive */
+@media screen and (max-width:1200px) {
+    .flex-container-s2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        flex: 1 0 10rem;
+        max-width: 80%;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    html 
+    {
+        overflow-x: hidden;
+    }
+}
+
+
+/* The styling for each card  */
+.card {
+    margin: 2%;
+    padding: 10px 20px;
+    flex-basis:30%;
+    background-color: #222831;
+    border: 1px solid rgb(76, 76, 76);
+    border-radius: 1rem;
+    transition: transform ease-in-out .3s;
+
+    /* Font */
+    font-size: 120%;
+}
+
+/* When the cursor hovers above the card, it increases in size by 1.15 times */
+.card:hover {
+    transform: scale(1.15);
+}
+
+/* Controlling the links in the text  */
+.card a {
+    text-decoration: none;
+    color:#ffffff;
+}
+/* --------- Section 2 is over -------------- */
+
+
+/* ---------- Section 3 begins -------------- */
+
+.section-3 {
+    background-color: #07090d;
+    color: white;
+}
+
+
+.intro-s3 {
+    margin: auto;
+    text-align: center;
+    padding-top: 5%;
+    width: 50%;
+    font-size:120%;
+    padding-bottom: 5%;
+}
+
+.intro-s3 > hr {
+    width: 5%;
+}
+
+/* Flex container in Section 3 -- feature list  */
+.flex-container-s3 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    /* flex-grow: 1; */
+    max-width: 50%;
+    /* border: 1px solid white; */
+    padding: 1%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-card.text {
+    max-width: 55%;
+    padding:10%;
+    font-size: 130%;
+}
+
+.feature-card.image {
+    width: 45%;
+    height: 100%;
+    align-self: center;
+}
+.feature-card.text ul {
+    display: block;
+    list-style-type: square;
+}
+
+
+/* Making this responsive */
+@media screen and (max-width:1200px) {
+    .flex-container-s3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .feature-card.image {
+        max-width: 90%;
+        width: auto;
+    }
+
+    .feature-card.text {
+        height:auto;
+        margin:0;
+        max-width:90%;
+        
+        text-align: left;
+    }
+}
+
+
+
+
+/* Footer */
+footer {
+    background-color:red;
+}
+.details ul{
+    display: block;
+    text-align: left;
+}
+
+.details {
+    float: left;
+    padding-left: 5%;
+    padding-top: 5%;
+}
+
+.details h2 {
+    display: block;
+}
