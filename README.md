@@ -13,14 +13,16 @@ The ultimate end goal, process-wise, of this project is to get these files hoste
 The following project is an attempt by me to create a responsive landing page for the purpose of displaying the knowledge I've gained so far (May 2023) in HTML,CSS, JavaScript, Git, and (tangentially related) Linux.  
 
 
-## Tools Used
+## Technologies Used
 - HTML 
 - CSS (vanilla, Flexbox, Grid)
 - JavaScript
+- Git (for version control purposes)
+
+## Tools Used
 - VisualStudio Code (for coding)
 - Brave Browser (for previewing and debugging)
 - Neovim (for editing log files and this README.md file)
-- Git (for version control purposes)
 - GitHub (for hosting the files on a remote repository)
 - Zathura (for viewing pdfs)
 - Tabbed (PWMT program to add tab features to existing programs)
