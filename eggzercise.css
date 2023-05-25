@@ -289,7 +289,7 @@ li a:hover{
 
 .feature-card.text ul {
     display: block;
-    list-style-type: square;
+    list-style-type: circle;
 }
 
 
@@ -310,7 +310,9 @@ footer {
 
 .icon-list li {
     float: left;
-    padding: 10px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+    /* margin: 10px; */
     text-align: center;
 }
 
@@ -446,6 +448,7 @@ footer {
     .navigation {
         flex-direction: column;
         align-items: flex-start;
+        transition: all 0.4s ease-in-out;
     }
     .nav-menu {
         padding-left: 0;
@@ -461,6 +464,9 @@ footer {
         background-color: #51515143;
     }
 
+    .icon-list li {
+        margin-top: 10px;
+    }
     .nav-menu.active {
         max-height: 200px;
         width: 100%;
@@ -468,6 +474,28 @@ footer {
     }
     #hamburger-icon.active {
         display: flex;
+    }
+
+    .section-2 {
+        font-size: 0.9em;
+    }
+    .section-3 {
+        font-size: 1em;
+    }
+
+    .flex-container-s3 {
+        font-size: 0.8em;
+    }
+
+    .list-img > li {
+        padding:0;
+    }
+
+    .column.about-us > p {
+        font-size: 0.95em;
+    }
+    #logo {
+        width: 45%;
     }
 }
 
