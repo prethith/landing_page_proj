@@ -28,6 +28,6 @@ The following project is an attempt by me to create a responsive landing page fo
 - Tabbed (PWMT program to add tab features to existing programs)
 - Kitty terminal emulator (for executing git CLI commands)
 - Pop_OS! (operating system; distro of Ubuntu, which itself is a distro of Debian, a variant of the GNU/Linux OS with the Linux kernel)
-
+- FontAwesome (for icons)
 
 
