@@ -248,7 +248,8 @@ li a:hover{
 }
 
 .intro-s3 > hr {
-    width: 5%;
+    width: 15%;
+    border: 1px solid #737373;    
 }
 
 /* Flex container in Section 3 -- feature list  */
