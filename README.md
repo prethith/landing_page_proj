@@ -2,7 +2,7 @@
 
 ## About 
 
-This is a sample landing page for an imaginary company/product, with CSS flashiness and JavaScript functionalities like scroll animations, etc.
+[This](https://proj-page-land.netlify.app) is a sample landing page for an imaginary company/product, with CSS flashiness and JavaScript functionalities like scroll animations, etc.
 
 This project also utilizes Git to maintain a version control of these files, hosted on a remote repository on GitHub.
 
